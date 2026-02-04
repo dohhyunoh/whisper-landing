@@ -1,0 +1,27 @@
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+
+export const metadata: Metadata = {
+  title: "Whisper — Daily Quotes, Tailored to You",
+  description:
+    "Discover beautiful quotes that speak to your soul. Whisper delivers personalized daily quotes across motivation, philosophy, health, relationships, and more.",
+  openGraph: {
+    title: "Whisper — Daily Quotes, Tailored to You",
+    description:
+      "Discover beautiful quotes that speak to your soul. Download free on iOS and Android.",
+    type: "website",
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
+  return (
+    <html lang="en" className={inter.variable}>
+      <body className="font-sans antialiased">{children}</body>
+    </html>
+  );
+}

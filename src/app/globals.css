@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+/* ---------------------------------------------------------------------------
+   Brand CSS custom properties — sourced from MyQuotesApp/constants/theme.ts
+   --------------------------------------------------------------------------- */
+:root {
+  --whisper-primary: #5a8ba8;
+  --whisper-primary-dark: #3a6b80;
+  --whisper-secondary: #7b9aaa;
+  --whisper-accent: #e85d75;
+  --whisper-bg-start: #b8d9e8;
+  --whisper-bg-mid: #d4e8f0;
+  --whisper-bg-end: #eef4f7;
+  --whisper-bg-floor: #f5f5f0;
+}
+
+/* ---------------------------------------------------------------------------
+   Utility classes that reference the custom properties
+   --------------------------------------------------------------------------- */
+.text-whisper-primary { color: var(--whisper-primary); }
+.text-whisper-primary-dark { color: var(--whisper-primary-dark); }
+.text-whisper-secondary { color: var(--whisper-secondary); }
+.text-whisper-accent { color: var(--whisper-accent); }
+.bg-whisper-accent { background-color: var(--whisper-accent); }
+.bg-whisper-primary { background-color: var(--whisper-primary); }
+.bg-whisper-primary-dark { background-color: var(--whisper-primary-dark); }
+.border-whisper-accent { border-color: var(--whisper-accent); }
+.border-whisper-primary { border-color: var(--whisper-primary); }
+
+/* Ring / focus color */
+.ring-whisper-accent { --tw-ring-color: var(--whisper-accent); }
+
+/* Scrollbar hide utility */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
