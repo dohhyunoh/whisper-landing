@@ -8,7 +8,7 @@ const STEPS = [
   {
     number: "01",
     title: "Download & Set Up",
-    desc: "Grab Whisper from the App Store or Google Play. Takes seconds to install and open.",
+    desc: "Grab Whisper from the App Store. Takes seconds to install and open.",
   },
   {
     number: "02",

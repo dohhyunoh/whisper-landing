@@ -43,18 +43,6 @@ export default function Hero() {
                 <div className="text-sm font-semibold">App Store</div>
               </span>
             </a>
-            <a
-              href="#"
-              className="flex items-center gap-2 bg-gray-900 text-white px-5 py-3 rounded-xl shadow-md hover:bg-gray-800 transition-colors"
-            >
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M3 20.5v-17c0-.59.34-1.11.83-1.38L13.16 12l-9.33 9.88C3.34 21.61 3 21.09 3 20.5zm11.5-8.79l2.3-2.3-7.4-7.4 5.1 9.7zm3.14 1.79l2.17-1.25c.5-.29.5-1.06 0-1.35l-2.17-1.25L15.5 12l2.14 2.5zM6.4 20.7l7.4-7.4-2.3-2.3L6.4 20.7z" />
-              </svg>
-              <span className="text-left">
-                <div className="text-xs opacity-75">Get it on</div>
-                <div className="text-sm font-semibold">Google Play</div>
-              </span>
-            </a>
           </div>
         </motion.div>
 
@@ -73,15 +61,11 @@ export default function Hero() {
                 "linear-gradient(180deg, #B8D9E8 0%, #D4E8F0 50%, #EEF4F7 100%)",
             }}
           >
-            <div className="text-center px-6">
-              <div className="text-6xl mb-4">📱</div>
-              <p className="text-whisper-secondary font-medium text-sm">
-                App Screenshot
-              </p>
-              <p className="text-whisper-secondary/60 text-xs mt-1">
-                Swap this placeholder for a real screenshot
-              </p>
-            </div>
+            <img
+              src="/screenshot_firstboarding.png"
+              alt="Whisper app onboarding screenshot"
+              className="w-full h-full object-cover"
+            />
           </div>
         </motion.div>
       </div>
