@@ -64,6 +64,7 @@ export default function PrivacyPage() {
             We use the following third-party services:
           </p>
           <ul>
+            <li><strong>RevenueCat</strong> — to process in-app purchases. RevenueCat collects purchase history and anonymous device identifiers. See their privacy policy at <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer" className="text-whisper-primary hover:underline">revenuecat.com/privacy</a>.</li>
             <li><strong>Google Fonts</strong> — to load premium typefaces. Google may log font requests; see their privacy policy at google.com/privacy.</li>
             <li><strong>Vercel</strong> — to host this landing page. See their privacy policy at vercel.com/legal/privacy-policy.</li>
             <li><strong>Apple App Store</strong> — distribution platform governed by its own privacy policy.</li>
