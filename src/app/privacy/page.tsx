@@ -37,6 +37,7 @@ export default function PrivacyPage() {
             <li><strong>Onboarding data</strong> — the name, preferences, and interest categories you choose during setup. This is stored locally on your device.</li>
             <li><strong>Liked &amp; saved quotes</strong> — stored locally via AsyncStorage so your favourites persist across sessions.</li>
             <li><strong>Premium status</strong> — a flag indicating whether you have unlocked Premium, stored locally.</li>
+            <li><strong>Anonymous analytics data</strong> — to improve the app experience, we collect anonymous usage data including screen views, feature usage, and onboarding progress. No personally identifiable information is collected.</li>
             <li><strong>Device identifiers</strong> — only if required by the app store platform for analytics; we do not collect these independently.</li>
           </ul>
         </Section>
@@ -64,6 +65,7 @@ export default function PrivacyPage() {
             We use the following third-party services:
           </p>
           <ul>
+            <li><strong>PostHog</strong> — to collect and process anonymous analytics data (screen views, feature usage, onboarding progress) to improve the app experience. No personally identifiable information is collected. See their privacy policy at <a href="https://posthog.com/privacy" target="_blank" rel="noopener noreferrer" className="text-whisper-primary hover:underline">posthog.com/privacy</a>.</li>
             <li><strong>RevenueCat</strong> — to process in-app purchases. RevenueCat collects purchase history and anonymous device identifiers. See their privacy policy at <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer" className="text-whisper-primary hover:underline">revenuecat.com/privacy</a>.</li>
             <li><strong>Google Fonts</strong> — to load premium typefaces. Google may log font requests; see their privacy policy at google.com/privacy.</li>
             <li><strong>Vercel</strong> — to host this landing page. See their privacy policy at vercel.com/legal/privacy-policy.</li>
