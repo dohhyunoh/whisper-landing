@@ -102,6 +102,20 @@ export default function TermsPage() {
           </p>
         </Section>
 
+        <Section title="Standard End User License Agreement (EULA)">
+          <p>
+            This app uses the standard Apple End User License Agreement (EULA). You can review it here:{" "}
+            <a
+              href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline text-whisper-primary-dark hover:opacity-80 transition-opacity"
+            >
+              Apple Standard EULA
+            </a>.
+          </p>
+        </Section>
+
         <Section title="Contact">
           <p>
             If you have questions about these terms, please reach out via the Contact link in the footer of this site.
