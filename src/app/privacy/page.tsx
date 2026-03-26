@@ -27,7 +27,7 @@ export default function PrivacyPage() {
       {/* Content */}
       <article className="max-w-3xl mx-auto px-6 pb-24 pt-8">
         <h1 className="text-4xl font-bold text-whisper-primary-dark">Privacy Policy</h1>
-        <p className="text-whisper-secondary mt-2 text-sm">Last updated: February 2026</p>
+        <p className="text-whisper-secondary mt-2 text-sm">Last updated: March 2026</p>
 
         <Section title="What information we collect">
           <p>
@@ -38,13 +38,14 @@ export default function PrivacyPage() {
             <li><strong>Liked &amp; saved quotes</strong> — stored locally via AsyncStorage so your favourites persist across sessions.</li>
             <li><strong>Premium status</strong> — a flag indicating whether you have unlocked Premium, stored locally.</li>
             <li><strong>Anonymous analytics data</strong> — to improve the app experience, we collect anonymous usage data including screen views, feature usage, and onboarding progress. No personally identifiable information is collected.</li>
-            <li><strong>Device identifiers</strong> — only if required by the app store platform for analytics; we do not collect these independently.</li>
+            <li><strong>Advertising identifier (IDFA)</strong> — if you grant permission via the App Tracking Transparency prompt, we collect your device&apos;s advertising identifier to measure the performance of advertising campaigns. You can decline this prompt and the app will function normally without it.</li>
+            <li><strong>Attribution data</strong> — we collect anonymous install and in-app event data (e.g. subscription events) to understand which advertising campaigns bring users to Whisper. This data is processed by AppsFlyer and shared with advertising partners such as TikTok.</li>
           </ul>
         </Section>
 
         <Section title="How we use your information">
           <p>
-            All personal data you provide during onboarding is used solely to customise which quotes appear in your feed. We do not use it for advertising, profiling, or any other purpose.
+            Personal data you provide during onboarding is used solely to customise which quotes appear in your feed. We do not use it for advertising or profiling. Advertising identifiers and attribution data, when collected, are used only to measure advertising campaign performance and optimise ad delivery through our advertising partners.
           </p>
         </Section>
 
@@ -54,9 +55,12 @@ export default function PrivacyPage() {
           </p>
         </Section>
 
-        <Section title="Cookies and tracking">
+        <Section title="Advertising and tracking">
           <p>
-            The Whisper mobile app does not use cookies or web tracking technologies. This website (the landing page) may use basic analytics provided by our hosting provider (Vercel) to understand traffic patterns. No personal identifiers are collected or shared.
+            When you first open Whisper, you will be shown Apple&apos;s App Tracking Transparency (ATT) prompt asking for permission to track your activity across other companies&apos; apps and websites. If you consent, your device&apos;s advertising identifier (IDFA) will be shared with AppsFlyer and our advertising partners (such as TikTok) to measure ad campaign performance. If you decline, the app will still function normally — only anonymous, aggregated data will be used for attribution via Apple&apos;s SKAdNetwork framework.
+          </p>
+          <p>
+            This website (the landing page) may use basic analytics provided by our hosting provider (Vercel) to understand traffic patterns. No personal identifiers are collected or shared via the website.
           </p>
         </Section>
 
@@ -66,7 +70,9 @@ export default function PrivacyPage() {
           </p>
           <ul>
             <li><strong>PostHog</strong> — to collect and process anonymous analytics data (screen views, feature usage, onboarding progress) to improve the app experience. No personally identifiable information is collected. See their privacy policy at <a href="https://posthog.com/privacy" target="_blank" rel="noopener noreferrer" className="text-whisper-primary hover:underline">posthog.com/privacy</a>.</li>
-            <li><strong>RevenueCat</strong> — to process in-app purchases. RevenueCat collects purchase history and anonymous device identifiers. See their privacy policy at <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer" className="text-whisper-primary hover:underline">revenuecat.com/privacy</a>.</li>
+            <li><strong>RevenueCat</strong> — to process in-app purchases. RevenueCat collects purchase history and anonymous device identifiers. Subscription events are forwarded to AppsFlyer for attribution purposes. See their privacy policy at <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer" className="text-whisper-primary hover:underline">revenuecat.com/privacy</a>.</li>
+            <li><strong>AppsFlyer</strong> — to measure advertising campaign performance and attribute app installs and in-app events (such as subscriptions) to their originating ad campaigns. AppsFlyer may collect your IDFA (with your consent), anonymous device identifiers, and in-app event data. This data is shared with our advertising partners (such as TikTok) to optimise ad delivery. See their privacy policy at <a href="https://www.appsflyer.com/legal/privacy-policy/" target="_blank" rel="noopener noreferrer" className="text-whisper-primary hover:underline">appsflyer.com/privacy</a>.</li>
+            <li><strong>TikTok Ads</strong> — receives attribution and conversion data from AppsFlyer to measure and optimise advertising campaigns that direct users to Whisper. See their privacy policy at <a href="https://www.tiktok.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-whisper-primary hover:underline">tiktok.com/privacy</a>.</li>
             <li><strong>Google Fonts</strong> — to load premium typefaces. Google may log font requests; see their privacy policy at google.com/privacy.</li>
             <li><strong>Vercel</strong> — to host this landing page. See their privacy policy at vercel.com/legal/privacy-policy.</li>
             <li><strong>Apple App Store</strong> — distribution platform governed by its own privacy policy.</li>
