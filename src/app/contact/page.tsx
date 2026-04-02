@@ -34,26 +34,26 @@ export default function ContactPage() {
           <p className="mt-2 text-whisper-secondary leading-relaxed">
             For general questions or feedback, drop us a line at{" "}
             <a
-              href="mailto:dohpamine5@gmail.com"
+              href="mailto:admin@whisperquotes.app"
               className="text-whisper-primary-dark underline hover:opacity-70 transition-opacity"
             >
-              dohpamine5@gmail.com
+              admin@whisperquotes.app
             </a>
             .
           </p>
         </section>
 
         <section className="mt-8">
-          <h2 className="text-xl font-semibold text-whisper-primary-dark">Twitter / X</h2>
+          <h2 className="text-xl font-semibold text-whisper-primary-dark">TikTok</h2>
           <p className="mt-2 text-whisper-secondary leading-relaxed">
             Say hi on{" "}
             <a
-              href="https://x.com/dohpaminne"
+              href="https://www.tiktok.com/@whisperquotes.app"
               target="_blank"
               rel="noopener noreferrer"
               className="text-whisper-primary-dark underline hover:opacity-70 transition-opacity"
             >
-              @dohpaminne
+              @whisperquotes.app
             </a>
             .
           </p>
