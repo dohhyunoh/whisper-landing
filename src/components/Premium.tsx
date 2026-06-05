@@ -3,13 +3,13 @@
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { motion } from "framer-motion";
-import { THEME_SWATCHES } from "@/lib/data";
 
 const BULLETS = [
-  "Unlimited access to every category",
-  "12 stunning background themes",
-  "4 premium fonts + Shuffle mode",
-  "Early bird users get Premium free",
+  "10 personalised quotes every day",
+  "Swipe-trained learning engine",
+  "Your evolving Soul Signature",
+  "Save unlimited favourites + write your own",
+  "Premium themes, fonts, and widgets",
 ];
 
 export default function Premium() {
@@ -25,68 +25,72 @@ export default function Premium() {
           "linear-gradient(180deg, #EEF4F7 0%, #D4E8F0 60%, #B8D9E8 100%)",
       }}
     >
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         <h2 className="text-center text-3xl sm:text-4xl font-bold text-whisper-primary-dark">
-          Go Premium
+          Whisper Pro
         </h2>
         <p className="text-center text-whisper-secondary mt-3 max-w-lg mx-auto">
-          Unlock the full Whisper experience with beautiful themes and exclusive
-          fonts.
+          One subscription. Everything Whisper does. Cancel anytime.
         </p>
 
-        <div className="mt-12 flex flex-col lg:flex-row gap-10 items-start justify-center">
-          {/* Left — feature list */}
-          <motion.div
-            initial={{ opacity: 0, x: -24 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.55, ease: "easeOut" }}
-            className="flex-1 max-w-md"
-          >
-            <ul className="space-y-4">
-              {BULLETS.map((b) => (
-                <li key={b} className="flex items-start gap-3">
-                  <span className="mt-0.5 flex-shrink-0 w-6 h-6 rounded-full bg-whisper-accent text-white flex items-center justify-center">
-                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
-                      <path d="M3 8l3.5 3.5L13 5" stroke="white" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                  </span>
-                  <span className="text-whisper-primary-dark font-medium">
-                    {b}
-                  </span>
-                </li>
-              ))}
-            </ul>
-
-            <a
-              href="#"
-              className="inline-block mt-8 bg-whisper-accent text-white px-7 py-3 rounded-full font-semibold shadow-md hover:opacity-90 transition-opacity"
-            >
-              Unlock Premium
-            </a>
-          </motion.div>
-
-          {/* Right — theme swatches grid (placeholder thumbnails) */}
-          <motion.div
-            initial={{ opacity: 0, x: 24 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.55, delay: 0.12, ease: "easeOut" }}
-            className="flex-1 max-w-md w-full"
-          >
-            <div className="grid grid-cols-4 gap-3">
-              {THEME_SWATCHES.map((t) => (
-                <div key={t.key} className="flex flex-col items-center">
-                  <div
-                    className="w-full aspect-square rounded-xl shadow-sm border border-white/60"
-                    style={{ backgroundColor: t.color }}
-                  />
-                  <span className="text-xs text-whisper-secondary mt-1.5 text-center leading-tight">
-                    {t.displayName}
-                  </span>
-                </div>
-              ))}
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.55, ease: "easeOut" }}
+          className="mt-12 bg-white/80 backdrop-blur-sm rounded-3xl shadow-md border border-white/60 p-8 sm:p-10 max-w-2xl mx-auto"
+        >
+          {/* Price */}
+          <div className="text-center">
+            <div className="inline-block px-4 py-1.5 rounded-full bg-whisper-accent/10 text-whisper-accent text-xs font-bold tracking-wider uppercase">
+              3-day free trial
             </div>
-          </motion.div>
-        </div>
+            <div className="mt-4 flex items-baseline justify-center gap-2">
+              <span className="text-5xl font-bold text-whisper-primary-dark">$14.99</span>
+              <span className="text-whisper-secondary">/ month</span>
+            </div>
+            <p className="mt-2 text-sm text-whisper-secondary">
+              or <span className="font-semibold text-whisper-primary-dark">$59.99/year</span> — save 67%
+            </p>
+          </div>
+
+          {/* Bullets */}
+          <ul className="mt-8 space-y-3.5">
+            {BULLETS.map((b) => (
+              <li key={b} className="flex items-start gap-3">
+                <span className="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full bg-whisper-accent text-white flex items-center justify-center">
+                  <svg width="12" height="12" viewBox="0 0 16 16" fill="none">
+                    <path d="M3 8l3.5 3.5L13 5" stroke="white" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </span>
+                <span className="text-whisper-primary-dark">{b}</span>
+              </li>
+            ))}
+          </ul>
+
+          {/* CTA */}
+          <a
+            href="https://apps.apple.com/us/app/whisper-daily-quotes/id6758811323"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-8 block w-full text-center bg-whisper-accent text-white px-7 py-3.5 rounded-full font-semibold shadow-md hover:opacity-90 transition-opacity"
+          >
+            Start free trial
+          </a>
+          <p className="mt-3 text-center text-xs text-whisper-secondary">
+            No charge for 3 days. Cancel anytime in your Apple ID settings.
+          </p>
+        </motion.div>
+
+        {/* Grandfathered note */}
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={inView ? { opacity: 1 } : {}}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="mt-8 text-center text-sm text-whisper-secondary max-w-xl mx-auto"
+        >
+          Already subscribed to Whisper before this update? Your price is locked at
+          your original rate. Nothing changes for you.
+        </motion.p>
       </div>
     </section>
   );

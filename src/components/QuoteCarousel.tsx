@@ -37,7 +37,7 @@ export default function QuoteCarousel() {
     >
       <div className="max-w-3xl mx-auto flex flex-col items-center text-center">
         <h2 className="text-2xl sm:text-3xl font-bold text-white/90 mb-10">
-          Words from the collection
+          A taste of what you'll swipe through
         </h2>
 
         {/* Quote slide */}

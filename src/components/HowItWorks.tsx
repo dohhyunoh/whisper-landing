@@ -7,18 +7,18 @@ import { motion } from "framer-motion";
 const STEPS = [
   {
     number: "01",
-    title: "Download & Set Up",
-    desc: "Grab Whisper from the App Store. Takes seconds to install and open.",
+    title: "Tell us where you are",
+    desc: "A quick onboarding asks how you're feeling, what you're carrying, and what kind of voice helps. We use it to shape your very first deck.",
   },
   {
     number: "02",
-    title: "Tell Us What Inspires You",
-    desc: "Pick your favourite categories — motivation, philosophy, health, and more — during a quick onboarding flow.",
+    title: "Swipe your daily 10",
+    desc: "Each morning, 10 quotes are waiting. Right means it speaks to you. Left means it doesn't. That's it.",
   },
   {
     number: "03",
-    title: "Enjoy Daily Quotes",
-    desc: "Receive a fresh, personalised quote every day. Swipe, save, and share what speaks to you.",
+    title: "It gets sharper",
+    desc: "Every swipe trains the engine. By next week, your deck knows the difference between you on a Monday and you on a Saturday.",
   },
 ];
 
@@ -40,11 +40,10 @@ export default function HowItWorks() {
           How it works
         </h2>
         <p className="text-center text-whisper-secondary mt-3 max-w-lg mx-auto">
-          Three simple steps and you&apos;re on your way to daily inspiration.
+          Three steps, then a daily ritual that gets better the more you use it.
         </p>
 
         <div className="relative mt-14 flex flex-col lg:flex-row items-start justify-center gap-8">
-          {/* Connecting line (desktop only) */}
           <div className="hidden lg:block absolute top-10 left-1/2 -translate-x-1/2 h-0.5 bg-whisper-primary/30 w-3/4" />
 
           {STEPS.map((step, i) => (
@@ -55,7 +54,6 @@ export default function HowItWorks() {
               transition={{ duration: 0.55, delay: i * 0.18, ease: "easeOut" }}
               className="relative flex-1 flex flex-col items-center text-center"
             >
-              {/* Circle with number */}
               <div
                 className="relative z-10 w-20 h-20 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg"
                 style={{ background: "linear-gradient(135deg, #5A8BA8, #3A6B80)" }}

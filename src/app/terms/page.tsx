@@ -27,7 +27,7 @@ export default function TermsPage() {
       {/* Content */}
       <article className="max-w-3xl mx-auto px-6 pb-24 pt-8">
         <h1 className="text-4xl font-bold text-whisper-primary-dark">Terms of Service</h1>
-        <p className="text-whisper-secondary mt-2 text-sm">Last updated: February 2026</p>
+        <p className="text-whisper-secondary mt-2 text-sm">Last updated: June 2026</p>
 
         <Section title="Acceptance of terms">
           <p>
@@ -37,15 +37,35 @@ export default function TermsPage() {
 
         <Section title="What Whisper is">
           <p>
-            Whisper is a free mobile application that delivers curated, personalised daily quotes across categories such as motivation, philosophy, health, relationships, and religion. A Premium tier is available to unlock additional themes, fonts, and categories.
+            Whisper is a premium mobile application that delivers a tightly curated batch of 10 personalised quotes each day. As you swipe through your daily deck, Whisper learns from your preferences and refines the quotes it shows you over time.
+          </p>
+          <p>
+            <strong>As of version 1.0.16, Whisper requires an active paid subscription to use.</strong> A free trial is available for new subscribers where applicable.
           </p>
         </Section>
 
-        <Section title="Free and Premium tiers">
+        <Section title="Subscription">
+          <p>
+            Whisper is offered exclusively as a paid subscription, available in monthly and annual plans. Pricing is displayed in the app at the point of purchase and may vary by region.
+          </p>
           <ul>
-            <li><strong>Free tier</strong> — includes access to core categories (Motivation, Philosophy) and a daily rotating unlock from the remaining categories. No payment or account is required.</li>
-            <li><strong>Premium tier</strong> — unlocks all categories, 12 background themes, premium fonts, and shuffle mode. Early bird users who download during the initial release window receive Premium at no cost. Pricing and terms for future Premium purchases will be disclosed at the point of purchase.</li>
+            <li><strong>New subscribers</strong> — subscriptions are billed at the price displayed in the app at the time of purchase. New subscribers may be eligible for a 3-day free trial. Eligibility is determined by Apple based on your prior subscription history.</li>
+            <li><strong>Existing subscribers from earlier versions</strong> — if you were already an active paying subscriber prior to the v1.0.16 update, your existing subscription continues at your original price. Apple will continue to auto-renew your subscription at the rate you originally agreed to, unless you cancel.</li>
+            <li><strong>Free trial</strong> — if a free trial is offered and you accept it, you will not be charged during the trial period. Your subscription begins automatically at the end of the trial unless you cancel at least 24 hours before it ends.</li>
           </ul>
+        </Section>
+
+        <Section title="Auto-renewal and cancellation">
+          <p>
+            Subscriptions automatically renew at the end of each billing period (monthly or annually) at the then-current price unless auto-renewal is turned off at least 24 hours before the end of the current period.
+          </p>
+          <p>
+            You can manage and cancel your subscription at any time by going to your Apple ID account settings on your device:{" "}
+            <strong>Settings → [your name] → Subscriptions → Whisper</strong>.
+          </p>
+          <p>
+            Cancellation will take effect at the end of the current billing period. You will retain access until that date. No partial refunds are offered for unused portions of a subscription period; refund requests are handled directly by Apple in accordance with their refund policy.
+          </p>
         </Section>
 
         <Section title="Your responsibilities">
@@ -86,7 +106,7 @@ export default function TermsPage() {
 
         <Section title="Termination">
           <p>
-            We reserve the right to suspend or terminate access to Whisper at any time, with or without cause. You may stop using the app at any time by uninstalling it.
+            We reserve the right to suspend or terminate access to Whisper at any time, with or without cause. You may stop using the app at any time by uninstalling it and cancelling your subscription through your Apple ID account settings.
           </p>
         </Section>
 

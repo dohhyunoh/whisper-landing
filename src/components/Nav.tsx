@@ -17,17 +17,17 @@ export default function Nav() {
         scrolled ? "backdrop-blur-md bg-white/70 shadow-sm" : "bg-transparent"
       }`}
     >
-      {/* Wordmark */}
       <span className="text-xl font-semibold text-whisper-primary-dark tracking-tight">
         Whisper
       </span>
 
-      {/* CTA */}
       <a
-        href="#"
+        href="https://apps.apple.com/us/app/whisper-daily-quotes/id6758811323"
+        target="_blank"
+        rel="noopener noreferrer"
         className="bg-whisper-accent text-white px-5 py-2 rounded-full text-sm font-semibold shadow-md hover:opacity-90 transition-opacity"
       >
-        Download Free
+        Start free trial
       </a>
     </nav>
   );

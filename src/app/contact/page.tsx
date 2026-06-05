@@ -8,14 +8,14 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <div
-      className="min-h-screen"
+      className="min-h-screen flex flex-col"
       style={{
         background:
           "linear-gradient(180deg, #B8D9E8 0%, #D4E8F0 40%, #EEF4F7 75%, #F5F5F0 100%)",
       }}
     >
       {/* Nav */}
-      <nav className="flex items-center justify-between px-6 py-5 max-w-4xl mx-auto">
+      <nav className="flex w-full items-center justify-between px-6 py-5 max-w-4xl mx-auto">
         <Link href="/" className="text-xl font-semibold text-whisper-primary-dark tracking-tight">
           Whisper
         </Link>
@@ -25,7 +25,7 @@ export default function ContactPage() {
       </nav>
 
       {/* Content */}
-      <article className="max-w-3xl mx-auto px-6 pb-24 pt-8">
+      <article className="flex-1 max-w-3xl mx-auto px-6 pb-24 pt-8 w-full">
         <h1 className="text-4xl font-bold text-whisper-primary-dark">Contact</h1>
         <p className="text-whisper-secondary mt-2 text-sm">We'd love to hear from you.</p>
 

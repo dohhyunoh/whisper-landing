@@ -20,19 +20,20 @@ export default function Hero() {
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
           <h1 className="text-5xl sm:text-6xl font-bold text-whisper-primary-dark leading-tight">
-            Words that
+            10 quotes a day,
             <br />
-            <span className="text-whisper-accent">inspire</span> you.
+            <span className="text-whisper-accent">tuned to you.</span>
           </h1>
           <p className="mt-5 text-lg text-whisper-secondary max-w-md">
-            A curated collection of quotes tailored to your interests, delivered
-            daily. Swipe, save, and share the words that matter most.
+            Whisper learns from every swipe. The more you use it, the deeper your
+            daily deck speaks to where you actually are.
           </p>
 
-          {/* Store buttons */}
           <div className="mt-8 flex flex-wrap gap-3 justify-center lg:justify-start">
             <a
-              href="#"
+              href="https://apps.apple.com/us/app/whisper-daily-quotes/id6758811323"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 bg-gray-900 text-white px-5 py-3 rounded-xl shadow-md hover:bg-gray-800 transition-colors"
             >
               <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
@@ -44,6 +45,9 @@ export default function Hero() {
               </span>
             </a>
           </div>
+          <p className="mt-4 text-xs text-whisper-secondary">
+            3-day free trial. Cancel anytime.
+          </p>
         </motion.div>
 
         {/* Right — phone placeholder */}

@@ -13,13 +13,13 @@ export default function Categories() {
     <section ref={ref} className="py-24 px-6 bg-white">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-center text-3xl sm:text-4xl font-bold text-whisper-primary-dark">
-          Explore categories
+          What we cover
         </h2>
         <p className="text-center text-whisper-secondary mt-3 max-w-lg mx-auto">
-          Hundreds of quotes across the topics that matter to you.
+          Thousands of quotes across the corners of life that matter most. Your
+          daily 10 is drawn from whichever ones speak to you.
         </p>
 
-        {/* Horizontal scroll on mobile, 5-col grid on desktop */}
         <div className="mt-10 flex gap-4 overflow-x-auto scrollbar-hide lg:grid lg:grid-cols-5 lg:overflow-visible pb-2">
           {CATEGORIES.map((cat, i) => (
             <motion.div
@@ -32,16 +32,11 @@ export default function Categories() {
                 background: `linear-gradient(160deg, ${cat.gradient[0]} 0%, ${cat.gradient[1]} 35%, ${cat.gradient[2]} 70%, ${cat.gradient[3]} 100%)`,
               }}
             >
-              <div className="p-5 flex flex-col items-center text-center h-full min-h-[180px] justify-between">
+              <div className="p-5 flex flex-col items-center text-center h-full min-h-[160px] justify-between">
                 <span className="text-3xl">{cat.icon}</span>
-                <div>
-                  <h3 className="font-semibold text-whisper-primary-dark">
-                    {cat.label}
-                  </h3>
-                  <p className="text-xs text-whisper-secondary mt-0.5">
-                    {cat.quoteCount} quotes
-                  </p>
-                </div>
+                <h3 className="font-semibold text-whisper-primary-dark">
+                  {cat.label}
+                </h3>
               </div>
             </motion.div>
           ))}

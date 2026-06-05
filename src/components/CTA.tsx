@@ -24,16 +24,17 @@ export default function CTA() {
         className="max-w-2xl mx-auto flex flex-col items-center text-center"
       >
         <h2 className="text-3xl sm:text-4xl font-bold text-whisper-primary-dark">
-          Start your daily ritual today.
+          Find the words that speak to you.
         </h2>
         <p className="text-whisper-secondary mt-3 text-lg">
-          Free forever. No account required to get started.
+          Try Whisper free for 3 days. Cancel anytime.
         </p>
 
         <div className="mt-8 flex flex-wrap gap-3 justify-center">
-          {/* App Store badge placeholder */}
           <a
-            href="#"
+            href="https://apps.apple.com/us/app/whisper-daily-quotes/id6758811323"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 bg-gray-900 text-white px-5 py-3 rounded-xl shadow-md hover:bg-gray-800 transition-colors"
           >
             <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
