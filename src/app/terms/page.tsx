@@ -46,7 +46,7 @@ export default function TermsPage() {
 
         <Section title="Subscription">
           <p>
-            Whisper is offered exclusively as a paid subscription, available in monthly and annual plans. Pricing is displayed in the app at the point of purchase and may vary by region.
+            Whisper is offered exclusively as a paid subscription, available in weekly and annual plans. Pricing is displayed in the app at the point of purchase and may vary by region.
           </p>
           <ul>
             <li><strong>New subscribers</strong> — subscriptions are billed at the price displayed in the app at the time of purchase. New subscribers may be eligible for a 3-day free trial. Eligibility is determined by Apple based on your prior subscription history.</li>
@@ -57,7 +57,7 @@ export default function TermsPage() {
 
         <Section title="Auto-renewal and cancellation">
           <p>
-            Subscriptions automatically renew at the end of each billing period (monthly or annually) at the then-current price unless auto-renewal is turned off at least 24 hours before the end of the current period.
+            Subscriptions automatically renew at the end of each billing period (weekly or annually) at the then-current price unless auto-renewal is turned off at least 24 hours before the end of the current period.
           </p>
           <p>
             You can manage and cancel your subscription at any time by going to your Apple ID account settings on your device:{" "}

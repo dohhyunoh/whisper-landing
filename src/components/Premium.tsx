@@ -45,11 +45,11 @@ export default function Premium() {
               3-day free trial
             </div>
             <div className="mt-4 flex items-baseline justify-center gap-2">
-              <span className="text-5xl font-bold text-whisper-primary-dark">$14.99</span>
-              <span className="text-whisper-secondary">/ month</span>
+              <span className="text-5xl font-bold text-whisper-primary-dark">$3.99</span>
+              <span className="text-whisper-secondary">/ week</span>
             </div>
             <p className="mt-2 text-sm text-whisper-secondary">
-              or <span className="font-semibold text-whisper-primary-dark">$59.99/year</span> — save 67%
+              or <span className="font-semibold text-whisper-primary-dark">$59.99/year</span> — save 71%
             </p>
           </div>
 
