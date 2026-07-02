@@ -27,7 +27,7 @@ export default function PrivacyPage() {
       {/* Content */}
       <article className="max-w-3xl mx-auto px-6 pb-24 pt-8">
         <h1 className="text-4xl font-bold text-whisper-primary-dark">Privacy Policy</h1>
-        <p className="text-whisper-secondary mt-2 text-sm">Last updated: March 2026</p>
+        <p className="text-whisper-secondary mt-2 text-sm">Last updated: July 2026</p>
 
         <Section title="What information we collect">
           <p>
@@ -37,6 +37,9 @@ export default function PrivacyPage() {
             <li><strong>Onboarding data</strong> — the name, preferences, and interest categories you choose during setup. This is stored locally on your device.</li>
             <li><strong>Liked &amp; saved quotes</strong> — stored locally via AsyncStorage so your favourites persist across sessions.</li>
             <li><strong>Premium status</strong> — a flag indicating whether you have unlocked Premium, stored locally.</li>
+            <li><strong>Anonymous exchange content</strong> — if you use Whisper&apos;s anonymous letter exchange, the short notes you write, the mood you check in with, and (optionally) the general themes and gender you selected during onboarding are sent to our backend so a note can be delivered to and from other people. This content is linked only to an anonymous device identifier — never to your name, email, or any personal profile. Notes are automatically deleted after roughly 24 hours.</li>
+            <li><strong>Anonymous device identifier</strong> — to route exchange notes without requiring any login, Whisper creates an anonymous identifier for your device (via Supabase Anonymous Authentication). It contains no personal information.</li>
+            <li><strong>Push notification token</strong> — if you turn on message notifications, we store your device&apos;s push token so we can alert you when someone responds to, or likes, your note.</li>
             <li><strong>Anonymous analytics data</strong> — to improve the app experience, we collect anonymous usage data including screen views, feature usage, and onboarding progress. No personally identifiable information is collected.</li>
             <li><strong>Advertising identifier (IDFA)</strong> — if you grant permission via the App Tracking Transparency prompt, we collect your device&apos;s advertising identifier to measure the performance of advertising campaigns. You can decline this prompt and the app will function normally without it.</li>
             <li><strong>Attribution data</strong> — we collect anonymous install and in-app event data (e.g. subscription events) to understand which advertising campaigns bring users to Whisper. This data is processed by AppsFlyer and shared with advertising partners such as TikTok.</li>
@@ -51,7 +54,25 @@ export default function PrivacyPage() {
 
         <Section title="Data stored on your device">
           <p>
-            By default, Whisper stores all user data on your device using local storage (AsyncStorage). No data is transmitted to our servers unless you explicitly opt in to a feature that requires it (e.g. cloud sync, if introduced in a future version).
+            By default, Whisper stores your personal data — your name, preferences, interests, liked quotes, and premium status — locally on your device using local storage (AsyncStorage). This information is never transmitted to our servers.
+          </p>
+          <p>
+            The one exception is the anonymous letter exchange (described below): to deliver a note between two people, the note itself must pass through our backend. It is stored anonymously and deleted automatically after roughly 24 hours.
+          </p>
+        </Section>
+
+        <Section title="The anonymous letter exchange">
+          <p>
+            Whisper includes an optional feature that lets you exchange short, anonymous notes of encouragement with other users. We designed it to be private and anonymous by default:
+          </p>
+          <ul>
+            <li><strong>No identity.</strong> Notes are tied to an anonymous device identifier only. There are no names, no profiles, and no way for another user to see who you are.</li>
+            <li><strong>Ephemeral.</strong> Every note (and any report record) is automatically deleted from our backend after approximately 24 hours.</li>
+            <li><strong>Screened for safety.</strong> Before a note is delivered, its text is checked by an automated moderation service (OpenAI&apos;s Moderation API) to filter harmful content. This check is used only for safety — never for advertising, profiling, or model training. Notes that indicate a crisis are shown supportive resources instead of being delivered to another person.</li>
+            <li><strong>You are in control.</strong> You can report or block any note or sender at any time, and you can turn message notifications on or off in Settings.</li>
+          </ul>
+          <p>
+            The backend that stores and routes these notes is provided by Supabase. We do not sell exchange content, and we do not use it for advertising.
           </p>
         </Section>
 
@@ -69,6 +90,9 @@ export default function PrivacyPage() {
             We use the following third-party services:
           </p>
           <ul>
+            <li><strong>Supabase</strong> — provides the backend for the anonymous letter exchange: it stores and routes the notes, the anonymous device identifier, and your push notification token. Exchange notes are deleted automatically after roughly 24 hours. See their privacy policy at <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer" className="text-whisper-primary hover:underline">supabase.com/privacy</a>.</li>
+            <li><strong>OpenAI</strong> — the text of exchange notes is sent to OpenAI&apos;s Moderation API to screen for harmful content before delivery. This is used solely for safety and is not used to train models or for advertising. See their privacy policy at <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-whisper-primary hover:underline">openai.com/policies/privacy-policy</a>.</li>
+            <li><strong>Expo</strong> — delivers push notifications for the exchange (e.g. when someone responds to your note). Your anonymous push token is processed to route the notification to your device. See their privacy policy at <a href="https://expo.dev/privacy" target="_blank" rel="noopener noreferrer" className="text-whisper-primary hover:underline">expo.dev/privacy</a>.</li>
             <li><strong>PostHog</strong> — to collect and process anonymous analytics data (screen views, feature usage, onboarding progress) to improve the app experience. No personally identifiable information is collected. See their privacy policy at <a href="https://posthog.com/privacy" target="_blank" rel="noopener noreferrer" className="text-whisper-primary hover:underline">posthog.com/privacy</a>.</li>
             <li><strong>RevenueCat</strong> — to process in-app purchases. RevenueCat collects purchase history and anonymous device identifiers. Subscription events are forwarded to AppsFlyer for attribution purposes. See their privacy policy at <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer" className="text-whisper-primary hover:underline">revenuecat.com/privacy</a>.</li>
             <li><strong>AppsFlyer</strong> — to measure advertising campaign performance and attribute app installs and in-app events (such as subscriptions) to their originating ad campaigns. AppsFlyer may collect your IDFA (with your consent), anonymous device identifiers, and in-app event data. This data is shared with our advertising partners (such as TikTok) to optimise ad delivery. See their privacy policy at <a href="https://www.appsflyer.com/legal/privacy-policy/" target="_blank" rel="noopener noreferrer" className="text-whisper-primary hover:underline">appsflyer.com/privacy</a>.</li>
@@ -81,7 +105,10 @@ export default function PrivacyPage() {
 
         <Section title="How long we keep your data">
           <p>
-            Data stored locally on your device persists until you delete the app or manually clear app data. We do not retain copies of this data on any server.
+            Data stored locally on your device persists until you delete the app or manually clear app data. We do not retain copies of this local data on any server.
+          </p>
+          <p>
+            Anonymous letter-exchange content (notes, replies, and report records) is automatically deleted from our backend approximately 24 hours after it is created. Your anonymous device identifier and push token persist only so the feature can function, and are removed when you turn off message notifications or stop using the exchange.
           </p>
         </Section>
 

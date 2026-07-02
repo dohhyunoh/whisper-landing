@@ -20,6 +20,11 @@ const STEPS = [
     title: "It gets sharper",
     desc: "Every swipe trains the engine. By next week, your deck knows the difference between you on a Monday and you on a Saturday.",
   },
+  {
+    number: "04",
+    title: "Give, then be heard",
+    desc: "When you're ready, write a few kind words to a stranger — and a different soul writes back to you. Anonymous, private, and gone within a day.",
+  },
 ];
 
 export default function HowItWorks() {
@@ -40,7 +45,7 @@ export default function HowItWorks() {
           How it works
         </h2>
         <p className="text-center text-whisper-secondary mt-3 max-w-lg mx-auto">
-          Three steps, then a daily ritual that gets better the more you use it.
+          A few simple steps, then a daily ritual that gets better the more you use it.
         </p>
 
         <div className="relative mt-14 flex flex-col lg:flex-row items-start justify-center gap-8">

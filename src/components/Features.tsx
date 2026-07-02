@@ -25,6 +25,16 @@ const FEATURES = [
     ),
   },
   {
+    title: "Write to a stranger",
+    desc: "After your daily check-in, offer a few kind words to a stranger — and a different soul writes back to you. Anonymous, private, and gently fading within a day.",
+    icon: (
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+        <rect x="5" y="8" width="22" height="16" rx="3" stroke="#5A8BA8" strokeWidth="2.5" fill="none" />
+        <path d="M6 10l10 7 10-7" stroke="#5A8BA8" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
+  },
+  {
     title: "Your Soul Signature",
     desc: "See the shape of who you've been swiping like — a constellation of the themes that move you most.",
     icon: (
@@ -60,7 +70,7 @@ export default function Features() {
           A daily ritual, not a feed
         </h2>
         <p className="text-center text-whisper-secondary mt-3 max-w-xl mx-auto">
-          Whisper is built for intention, not endless scroll. Ten quotes. Yours alone.
+          Whisper is built for intention, not endless scroll — ten quotes to steady your morning, and a quiet, anonymous way to reach a stranger who needs it.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
