@@ -46,7 +46,7 @@ export default function Hero() {
             </a>
           </div>
           <p className="mt-4 text-xs text-whisper-secondary">
-            3-day free trial. Cancel anytime.
+            7-day free trial. Cancel anytime.
           </p>
         </motion.div>
 

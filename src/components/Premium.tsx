@@ -42,14 +42,14 @@ export default function Premium() {
           {/* Price */}
           <div className="text-center">
             <div className="inline-block px-4 py-1.5 rounded-full bg-whisper-accent/10 text-whisper-accent text-xs font-bold tracking-wider uppercase">
-              3-day free trial
+              7-day free trial
             </div>
             <div className="mt-4 flex items-baseline justify-center gap-2">
-              <span className="text-5xl font-bold text-whisper-primary-dark">$3.99</span>
-              <span className="text-whisper-secondary">/ week</span>
+              <span className="text-5xl font-bold text-whisper-primary-dark">$6.99</span>
+              <span className="text-whisper-secondary">/ month</span>
             </div>
             <p className="mt-2 text-sm text-whisper-secondary">
-              or <span className="font-semibold text-whisper-primary-dark">$59.99/year</span> — save 71%
+              or <span className="font-semibold text-whisper-primary-dark">$39.99/year</span> — save 52%
             </p>
           </div>
 
@@ -77,7 +77,7 @@ export default function Premium() {
             Start free trial
           </a>
           <p className="mt-3 text-center text-xs text-whisper-secondary">
-            No charge for 3 days. Cancel anytime in your Apple ID settings.
+            No charge for 7 days. Cancel anytime in your Apple ID settings.
           </p>
         </motion.div>
 
@@ -88,8 +88,8 @@ export default function Premium() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="mt-8 text-center text-sm text-whisper-secondary max-w-xl mx-auto"
         >
-          Already subscribed to Whisper before this update? Your price is locked at
-          your original rate. Nothing changes for you.
+          Already subscribed to Whisper? Good news — our new lower pricing applies
+          to you too. Your next renewal is automatically at the new rate.
         </motion.p>
       </div>
     </section>
