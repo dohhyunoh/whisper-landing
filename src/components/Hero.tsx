@@ -58,17 +58,21 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.15, ease: "easeOut" }}
         >
           <div
-            className="w-64 sm:w-72 rounded-3xl shadow-2xl border border-gray-200 flex items-center justify-center"
+            className="w-64 sm:w-72 aspect-[1168/2414] rounded-3xl overflow-hidden shadow-2xl border border-gray-200 flex items-center justify-center"
             style={{
-              height: "480px",
               background:
                 "linear-gradient(180deg, #B8D9E8 0%, #D4E8F0 50%, #EEF4F7 100%)",
             }}
           >
-            <img
-              src="/screenshot_firstboarding.png"
-              alt="Whisper app onboarding screenshot"
+            <video
+              src="/hero-preview.mp4"
+              poster="/app-screen.png"
+              autoPlay
+              muted
+              loop
+              playsInline
               className="w-full h-full object-cover"
+              aria-label="Whisper app showing the daily quote deck"
             />
           </div>
         </motion.div>

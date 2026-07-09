@@ -3,6 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Privacy Policy — Whisper",
+  alternates: { canonical: "/privacy" },
 };
 
 export default function PrivacyPage() {
