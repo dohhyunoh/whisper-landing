@@ -22,7 +22,6 @@ const appJsonLd = {
   applicationCategory: "LifestyleApplication",
   url: SITE_URL,
   installUrl: APP_STORE_URL,
-  offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
 };
 
 export default function Home() {

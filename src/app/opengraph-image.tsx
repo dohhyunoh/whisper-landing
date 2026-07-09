@@ -51,8 +51,18 @@ export default async function OpengraphImage() {
             <span>10 quotes a day,</span>
             <span style={{ color: "#E85D75" }}>tuned to you.</span>
           </div>
-          <div style={{ marginTop: 28, fontSize: 30, color: "#7B9AAA" }}>
-            Daily quotes that learn from every swipe.
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              marginTop: 28,
+              fontSize: 30,
+              color: "#7B9AAA",
+              lineHeight: 1.5,
+            }}
+          >
+            <span>Daily quotes that learn from every swipe —</span>
+            <span>and letters to a stranger who understands.</span>
           </div>
         </div>
         <img

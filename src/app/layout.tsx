@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Whisper — Daily Quotes, Tailored to You",
     description:
-      "Discover beautiful quotes that speak to your soul. Download free on iOS.",
+      "Daily quotes that learn from every swipe, and anonymous letters to a stranger who understands. Available on iOS.",
     type: "website",
     siteName: "Whisper",
     url: "/",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Whisper — Daily Quotes, Tailored to You",
     description:
-      "Discover beautiful quotes that speak to your soul. Download free on iOS.",
+      "Daily quotes that learn from every swipe, and anonymous letters to a stranger who understands. Available on iOS.",
   },
   itunes: { appId: APP_STORE_ID },
 };
