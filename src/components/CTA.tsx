@@ -27,7 +27,7 @@ export default function CTA() {
           Find the words that speak to you.
         </h2>
         <p className="text-whisper-secondary mt-3 text-lg">
-          Try Whisper free for 7 days. Cancel anytime.
+          Whisper is free to download.
         </p>
 
         <div className="mt-8 flex flex-wrap gap-3 justify-center">

@@ -27,7 +27,7 @@ export default function Nav() {
         rel="noopener noreferrer"
         className="bg-whisper-accent text-white px-5 py-2 rounded-full text-sm font-semibold shadow-md hover:opacity-90 transition-opacity"
       >
-        Start free trial
+        Get Whisper — it&apos;s free
       </a>
     </nav>
   );

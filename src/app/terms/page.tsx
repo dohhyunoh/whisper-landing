@@ -28,7 +28,7 @@ export default function TermsPage() {
       {/* Content */}
       <article className="max-w-3xl mx-auto px-6 pb-24 pt-8">
         <h1 className="text-4xl font-bold text-whisper-primary-dark">Terms of Service</h1>
-        <p className="text-whisper-secondary mt-2 text-sm">Last updated: June 2026</p>
+        <p className="text-whisper-secondary mt-2 text-sm">Last updated: July 2026</p>
 
         <Section title="Acceptance of terms">
           <p>
@@ -38,35 +38,22 @@ export default function TermsPage() {
 
         <Section title="What Whisper is">
           <p>
-            Whisper is a premium mobile application that delivers a tightly curated batch of 10 personalised quotes each day. As you swipe through your daily deck, Whisper learns from your preferences and refines the quotes it shows you over time.
+            Whisper is a mobile application that delivers a tightly curated batch of 10 personalised quotes each day. As you swipe through your daily deck, Whisper learns from your preferences and refines the quotes it shows you over time.
           </p>
           <p>
-            <strong>As of version 1.0.16, Whisper requires an active paid subscription to use.</strong> A free trial is available for new subscribers where applicable.
+            Whisper is currently free to download and use. We reserve the right to introduce optional paid features or subscriptions in the future; any such change would be clearly disclosed in the app before you are charged.
           </p>
         </Section>
 
-        <Section title="Subscription">
+        <Section title="Legacy subscriptions">
           <p>
-            Whisper is offered exclusively as a paid subscription, available in monthly and annual plans. Pricing is displayed in the app at the point of purchase and may vary by region.
+            Earlier versions of Whisper required a paid subscription. Those subscription plans have been discontinued and are no longer available for purchase.
           </p>
           <ul>
-            <li><strong>New subscribers</strong> — subscriptions are billed at the price displayed in the app at the time of purchase. New subscribers may be eligible for a 7-day free trial. Eligibility is determined by Apple based on your prior subscription history.</li>
-            <li><strong>Existing subscribers</strong> — your subscription continues to auto-renew unless you cancel. If we lower the price, the reduced price is applied automatically at your next renewal; we will never raise your price without your explicit consent through Apple.</li>
-            <li><strong>Free trial</strong> — if a free trial is offered and you accept it, you will not be charged during the trial period. Your subscription begins automatically at the end of the trial unless you cancel at least 24 hours before it ends.</li>
+            <li><strong>If you subscribed previously</strong> — your subscription will not renew again. You retain access to any paid features you had until the end of your last billing period, at no further charge.</li>
+            <li><strong>Cancelling early</strong> — if you wish to cancel before your current billing period ends, you can do so at any time via your Apple ID account settings: <strong>Settings → [your name] → Subscriptions → Whisper</strong>.</li>
+            <li>No partial refunds are offered for unused portions of a subscription period; refund requests are handled directly by Apple in accordance with their refund policy.</li>
           </ul>
-        </Section>
-
-        <Section title="Auto-renewal and cancellation">
-          <p>
-            Subscriptions automatically renew at the end of each billing period (monthly or annually) at the then-current price unless auto-renewal is turned off at least 24 hours before the end of the current period.
-          </p>
-          <p>
-            You can manage and cancel your subscription at any time by going to your Apple ID account settings on your device:{" "}
-            <strong>Settings → [your name] → Subscriptions → Whisper</strong>.
-          </p>
-          <p>
-            Cancellation will take effect at the end of the current billing period. You will retain access until that date. No partial refunds are offered for unused portions of a subscription period; refund requests are handled directly by Apple in accordance with their refund policy.
-          </p>
         </Section>
 
         <Section title="Your responsibilities">
@@ -107,7 +94,7 @@ export default function TermsPage() {
 
         <Section title="Termination">
           <p>
-            We reserve the right to suspend or terminate access to Whisper at any time, with or without cause. You may stop using the app at any time by uninstalling it and cancelling your subscription through your Apple ID account settings.
+            We reserve the right to suspend or terminate access to Whisper at any time, with or without cause. You may stop using the app at any time by uninstalling it (and cancelling any active legacy subscription through your Apple ID account settings, if applicable).
           </p>
         </Section>
 
